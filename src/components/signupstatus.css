@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.login-button {
+  display: block;
+  margin: 20px auto; /* Centers the button horizontally */
+  padding: 15px 70px;
+  font-family: "Noto Sans", sans-serif; 
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #EAB308B2;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  text-align: center; /* Ensures text within the button is centered */
+}
+
+.login-button:hover {
+  background-color: #ffb83e;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif; /* Updated font */
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+
+p {
+  color: #000;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 27px;
+  padding: 0;
+  margin: 0;
+}
+
+.img1 {
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 350px; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+}

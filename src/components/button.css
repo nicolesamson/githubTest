@@ -1,0 +1,66 @@
+@import url("https://fonts.cdnfonts.com/css/jockey-one");
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 90vh;
+}
+
+.button1,
+.button2 {
+  position: relative;
+  font-family: "Jockey One", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  width: 215px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.button1 {
+  background-color: #070614;
+  cursor: pointer;
+}
+
+.button1:hover {
+  color: #ffffff;
+  background: #f20ea3;
+  box-shadow: 0 0 10px #f20ea3, 0 0 40px #f20ea3, 0 0 80px #f20ea3;
+  border: none;
+}
+
+.button2 {
+  background-color: #070614;
+  cursor: pointer;
+}
+
+.button2:hover {
+  color: #ffffff;
+  background: cyan;
+  box-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  border: none;
+}
+
+.logout-button {
+  background-color: #eab308;
+  color: rgb(49, 49, 49);
+  font-family: "Jockey One", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}

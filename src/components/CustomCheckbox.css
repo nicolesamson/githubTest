@@ -1,0 +1,55 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    user-select: none;
+  }
+  
+  .custom-checkbox-input {
+    display: none;
+  }
+  
+  .custom-checkbox-box {
+    width: 16px;
+    height: 16px;
+    background-color: #c9c9c9;
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+  
+  .custom-checkbox-box:hover {
+    background-color: #777777; /* Slightly darker gray on hover */
+  }
+  
+  .custom-checkbox-input:checked + .custom-checkbox-box {
+    background-color: #c9c9c9; /* Reset to initial color when checked */
+  }
+  
+  .custom-checkbox-box::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px; /* Reduced width for a smaller checkmark */
+    height: 8px; /* Reduced height for a smaller checkmark */
+    border: solid black; /* Black checkmark color */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .custom-checkbox-input:checked + .custom-checkbox-box::after {
+    opacity: 1;
+  }
+  
+  .custom-checkbox-input:checked + .custom-checkbox-box:hover {
+    background-color: #777777; /* Slightly darker gray on hover */
+  }
+  
+  .custom-checkbox-label {
+    color: #333;
+  }

@@ -1,0 +1,19 @@
+.login-title-container {
+  flex-direction: column; /* Stack title and border vertically */
+  align-items: center; /* Center align items horizontally */
+  margin: 120px 0px 40px 150px; /* Adjust margins as needed */
+}
+
+.login-title {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: 600;
+  color: #333; /* Dark color for readability */
+  margin-left: 29px; /* Remove bottom margin to bring the border closer */
+}
+
+.border-line {
+  width: 250px; /* Set a specific width for the border line */
+  height: 3px; /* Border thickness */
+  background-color: #fbb03b; /* Border color */
+  margin-top: 0.5rem; /* Space between title and border */
+}

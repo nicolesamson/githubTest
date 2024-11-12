@@ -1,0 +1,114 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 0, 255, 0.5); /* Purple tint */
+  backdrop-filter: blur(1px); /* Background blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 40%;
+  max-height: 80vh; /* Constrain overall modal height */
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+  display: flex;
+  flex-direction: column; /* Ensures modal-body and modal-actions stack vertically */
+}
+
+/* Modal body styling */
+.modal-body {
+  padding: 20px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 60vh; /* Constrain height to allow for scroll */
+  flex-grow: 1; /* Allows the modal-body to take available space */
+}
+
+.modal-actions {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  background-color: #f9f9f9; /* Optional background for separation */
+}
+
+/* Yellow header */
+.modal-header {
+  background-color: #eab308;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-body h4 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #272727;
+  text-align: left;
+}
+
+.modal-body p {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #272727;
+  text-align: left;
+}
+
+.agree-btn,
+.disagree-btn {
+  border: none;
+  border-radius: 5px;
+  max-width: 150px;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.agree-btn {
+  background-color: #eab308;
+  border: 2px solid #eab308;
+  color: #272727;
+  height: 40px;
+  width: 129px;
+}
+
+.disagree-btn {
+  background-color: white;
+  color: #eab308;
+  border: 2px solid #eab308;
+}
+
+/* Scrollbar styles for WebKit browsers */
+.modal-body::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #828282; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #f1f1f1; /* Optional border to add space around the thumb */
+}
+
+/* Scrollbar styles for Firefox */
+.modal-body {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+  scrollbar-color: #828282 #f1f1f1; /* Thumb color and track color */
+}

@@ -1,0 +1,219 @@
+.homepage {
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.25rem;
+  }
+  
+  .highlight {
+    color: #FDB813;
+    font-weight: 500;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: 500px;
+    padding: 2rem 0;
+  }
+  
+  .card {
+    flex: 1;
+    position: relative;
+    height: 450px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .card-hovered {
+    flex: 1.5;
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-shrink {
+    flex: 0.8;
+    opacity: 0.7;
+  }
+  
+  .card-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+  }
+  
+  .card-overlay h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .card-overlay p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    font-size: 0.875rem;
+    color: #000000;
+  }
+  
+  
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FDB813;
+    z-index: 0;
+  }
+  
+  .circle-large {
+    width: 20rem;
+    height: 20rem;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+  }
+  
+  .circle-medium {
+    width: 10rem;
+    height: 10rem;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+  }
+  
+  .circle-small {
+    width: 4rem;
+    height: 4rem;
+    bottom: 10rem;
+    left: 5rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .cards-container {
+      flex-direction: column;
+    }
+    
+    .card {
+      width: 100%;
+      height: 300px;
+    }
+    
+    .card-hovered {
+      flex: 1;
+      width: 100%;
+    }
+    
+    .card-shrink {
+      flex: 1;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+    
+    .header p {
+      font-size: 1rem;
+    }
+  }
+  .welcome-header {
+    text-align: center;
+    margin-bottom: 2rem; /* Adjust spacing here to control how far it is from the top */
+    padding-top: 3rem; /* Adjust padding to control distance from top */
+  }
+  
+  .welcome-header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .assistance-text {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .username {
+    font-weight: 700;
+    color: black;
+  }
+  
+  .cards-container {
+    margin-top: 0.5rem; /* Adjust this to control distance between header and images */
+    
+  }
+  
+  .homepage {
+    background-image: url('../assets/bgimage.png'); /* Update with the path to your image */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  

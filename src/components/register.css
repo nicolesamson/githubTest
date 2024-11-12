@@ -1,0 +1,199 @@
+.lnfn {
+  font-size: 12px;
+  font-weight: 0;
+  font-style: italic;
+  color: #666;
+}
+
+.input input {
+  height: 50px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+}
+
+.placeholder {
+  color: white;
+}
+
+.input-titles {
+  color: black;
+  margin: 0;
+  font-weight: 700px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 50px;
+}
+/* 
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.inputs-register {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header {
+  font-family: "Jockey One", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  color: black;
+  font-size: 20px;
+}
+
+.register-container-1 {
+  background-color: rgba(36, 11, 11, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 35px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  position: relative;
+  border: 2px;
+  border-color: #eab308;
+}
+
+.RegisterButton1 {
+  background-color: #eab308;
+  color: rgb(49, 49, 49);
+  font-family: "Jockey One", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 230px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.button-container-register {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.black-text {
+  color: black;
+  font-size: 16px;
+}
+
+body {
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.register-margin {
+  margin: 30px 50px 30px 50px;
+}
+
+.terms-checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  background-color: #dcdcdc;
+  border-radius: 2px;
+}
+
+.terms-checkbox:checked {
+  background-color: #dcdcdc;
+}
+
+.terms-checkbox:hover {
+  background-color: #868686;
+}
+
+.terms-checkbox:checked::after {
+  content: "✓"; /* Checkmark character */
+  position: absolute;
+  top: 0px;
+  left: 2px; /* Adjust position as needed */
+  font-size: 12px; /* Adjust size as needed */
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Color of the checkmark */
+}
+
+.termsAndConditions {
+  color: #9747ff;
+  cursor: pointer;
+}
+
+.RegisterButton {
+  background-color: cyan;
+  position: relative; /* Position relative for the pseudo-elements */
+  font-family: "Jockey One", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px; /* Fixed width */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-align: center; /* Center the text within the button */
+  overflow: hidden; /* Prevent overflow of the pseudo-elements */
+}
+
+.terms-link {
+  color: #9747ff;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: 0.35s;
+}
+
+.terms-link:hover {
+  color: #c497ff;
+  text-decoration: underline;
+}
+
+.terms-container {
+  display: flex;
+  color: black;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 15px;
+}

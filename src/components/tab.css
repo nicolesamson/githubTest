@@ -1,0 +1,93 @@
+.all-form {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 15px 0px 15px 15px;
+  overflow: hidden; /* Ensures that the border-radius affects both children */
+}
+
+.yellow-container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  background-color: white; /* Adjust this color as needed */
+  border-radius: 15px;
+}
+
+.tab-container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 0px 15px 15px;
+  border-style: solid;
+  border-color: #eab308;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+.tab-button-login,
+.tab-button-register {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ebebeb;
+  color: #000000;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: background-color 0.3s;
+  border: none;
+  height: 60px;
+  position: relative;
+}
+
+.tab-button-login {
+  border-radius: 15px 0px 20px 0px;
+}
+
+.tab-button-login.active {
+  background-color: #ffffff;
+  color: rgb(49, 49, 49);
+}
+
+.tab-button-login.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: #eab308;
+}
+
+.tab-button-register {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.tab-button-register.active {
+  background-color: #ffffff;
+  color: rgb(49, 49, 49);
+}
+
+.tab-button-register.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: #eab308;
+}
+
+.image-container {
+  width: 50%; /* Adjust to control the size of the image section */
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container completely */
+  border-radius: 0px 20px 20px 0px; /* If needed for rounded effect */
+}

@@ -1,0 +1,191 @@
+.input input {
+  height: 50px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 50px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login {
+  color: black;
+  font-size: 20px;
+}
+
+.underliner {
+  width: 150px;
+  height: 0.5px;
+  background-color: cyan;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 1px;
+  border-radius: 50px;
+}
+
+.header {
+  font-family: "Jockey One", sans-serif;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.already-login {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -5px;
+}
+
+.forgot-password {
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container {
+  margin-top: 10px;
+  height: 50px;
+  color: aliceblue;
+}
+
+.LoginButton {
+  background-color: #eab308;
+  color: rgb(49, 49, 49);
+  font-family: "Jockey One", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.black-text {
+  color: black;
+}
+
+.background {
+  margin: 30px 50px 30px 50px;
+}
+
+/* FOR POP UP SUCCESSFUL/UNSUCCESSFUL */
+/* Success and Error Message Popup */
+.toast-container {
+  display: flex;
+  max-width: 350px;
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  height: 75px;
+  width: 310px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out, fadeOut 0.5s ease-in 3s forwards;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures no extra spacing or borders */
+}
+
+/* Success icon section */
+.toast-icon-container.success {
+  background-color: #39B100; /* Solid green background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 75px; /* Set width for the green section */
+}
+
+/* Error icon section */
+.toast-icon-container.error {
+  background-color: #dc3545; /* Solid red background for error */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 105px; /* Set width for the red section */
+}
+
+/* Style for icons */
+.toast-icon-container img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+}
+
+/* White section with text */
+.toast-content {
+  background-color: white;
+  color: black;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toast-message {
+  display: flex;
+  align-items: center; 
+}
+
+.toast-content p {
+  font-size: 1em;
+  color: black;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -100%); /* Start from above the viewport */
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0); /* End in the centered position */
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
